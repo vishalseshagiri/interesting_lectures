@@ -31,4 +31,4 @@ synonymns: speech, patter, sales pitch, blurb, talk
                     f = fib(n-1) + fib(n-2)
                 return f
         ```
-    - ![Alt text](naive_recursive_time_complexity.jpeg)
+    - ![naive_recursive_time_complexity.jpeg](images/naive_recursive_time_complexity.jpeg)
