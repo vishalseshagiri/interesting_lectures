@@ -22,6 +22,7 @@ synonymns: speech, patter, sales pitch, blurb, talk
     - Fn = Fn-1 + Fn-2
     - goal : compute Fn
     - Algorithm
+
         ```
             fib(n):
                 if n <= 2:
@@ -30,4 +31,4 @@ synonymns: speech, patter, sales pitch, blurb, talk
                     f = fib(n-1) + fib(n-2)
                 return f
         ```
-    ![Exponential time of naive recursive approach]("file:///home/vishal/workspace/interesting_lectures/dynamic_programming_mit_ocw/naive_recursive_time_complexity.jpeg")
+    - ![Alt text](naive_recursive_time_complexity.jpeg)
