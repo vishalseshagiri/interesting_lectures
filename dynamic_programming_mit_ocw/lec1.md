@@ -18,17 +18,25 @@ synonymns: speech, patter, sales pitch, blurb, talk
     - "subproblems + reuse"
     - take a problem, split it into subproblems, solve those subproblems and then reuse those subproblems
 1. Fibonacci
-    - F1 = F2 = 1
-    - Fn = Fn-1 + Fn-2
-    - goal : compute Fn
-    - Algorithm
+    - Naive recursive implementation
+        - F1 = F2 = 1
+        - Fn = Fn-1 + Fn-2
+        - goal : compute Fn
+        - Algorithm
 
-        ```
-            fib(n):
-                if n <= 2:
-                    f = 1
-                else:
-                    f = fib(n-1) + fib(n-2)
-                return f
-        ```
-    - ![naive_recursive_time_complexity.jpeg](images/naive_recursive_time_complexity.jpeg)
+            ```
+                fib(n):
+                    if n <= 2:
+                        f = 1
+                    else:
+                        f = fib(n-1) + fib(n-2)
+                    return f
+            ```
+        - ![naive_recursive_time_complexity.jpeg](images/naive_recursive_time_complexity.jpeg)
+    - Memoized DP Algorithm
+        - simple idea
+        - whenever we compute a fibonacci number put it in the dictionary
+        - when we need to compute the n-th fibonacci number we check, is it already in the dictonary 
+        - if yes return that answer
+        - otherwise compute it
+        - ![memoized_fib.jpeg](images/memoized_fig.jpeg) 
